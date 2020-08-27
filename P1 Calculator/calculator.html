@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="icon" href="roy.a2yush.png" type="image/gif" sizes="16x16">
+
+	<title>calculator</title>
+
+	<script type="text/javascript">
+		function display(x) {
+			document.getElementById("number").value+=x;
+		}
+
+		function compute() {
+			var x = document.getElementById("number").value;
+			document.getElementById("number").value = eval(x);
+		}
+	</script>
+
+	<style type="text/css">
+		input {
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			font-size: 25px;
+			border-radius: 5px;
+		}
+		input[type=button]:hover {
+			background-color: #b89e76;
+		}
+		input[type=text]:hover {
+			background-color: white;
+		}
+		input[type=text] {
+			width: 210px;
+			height: 30px;
+		}
+		.center {
+			margin-top: 10%;
+			text-align: center;
+		}
+		body {
+			overflow: hidden;
+			background-color: #9e9e8b;
+		}
+		table tr th {
+			font-size: 30px;
+			background-color: grey;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="center">
+		<p><strong>Name: </strong>Aayush Lal Roy</p>
+		<p><strong>USN: </strong>1CR17CS003</p>
+		<br>
+	</div>
+		<form>
+			<table border = "1" align="center">
+				<tr>
+					<th colspan="4">Calculator</th>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<input type="text" id="number" placeholder="0">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="reset" name="C" value="C">
+					</td>
+					<td>
+						<input type="button" name="divide" value="/" onclick="display(this.value)">
+					</td>
+					<td>
+						<input type="button" name="multiply" value="*" onclick="display(this.value)">
+					</td>
+					<td>
+						<input type="button" name="minus" value="-" onclick="display(this.value)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" name="seven" value="7" onclick="display(this.value)">
+					</td>
+					<td>
+						<input type="button" name="eight" value="8" onclick="display(this.value)">
+					</td>
+					<td>
+						<input type="button" name="nine" value="9" onclick="display(this.value)">
+					</td>
+					<td rowspan="2">
+						<input type="button" name="plus" value="+" onclick="display(this.value)" style="height: 100px;">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" name="four" value="4" onclick="display(this.value)">
+					</td>
+					<td>
+						<input type="button" name="five" value="5" onclick="display(this.value)">
+					</td>
+					<td>
+						<input type="button" name="six" value="6" onclick="display(this.value)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" name="one" value="1" onclick="display(this.value)">
+					</td>
+					<td>
+						<input type="button" name="two" value="2" onclick="display(this.value)">
+					</td>
+					<td>
+						<input type="button" name="three" value="3" onclick="display(this.value)">
+					</td>
+					<td rowspan="2">
+						<input type="button" name="equals" value="=" onclick="compute()" style="height: 100px;">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" name="dot" value="." onclick="display(this.value)">
+					</td>
+					<td>
+						<input type="button" name="zero" value="0" onclick="display(this.value)">
+					</td>
+					<td>
+						<input type="button" name="mod" value="%" onclick="display(this.value)">
+					</td>
+				</tr>
+			</table>
+		</form>
+	
+</body>
+</html>
