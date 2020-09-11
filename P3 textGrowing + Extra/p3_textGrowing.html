@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Auto Resizing</title>
+	</head>
+
+	<body style="background-color: black;">
+		<center style="margin-top: 10%; color: white;">
+			<p><strong>Name: </strong>Aayush Lal Roy</p>
+			<p><strong>USN: </strong>1CR17CS003</p>
+			<br>
+	 		<div class="cont" style="margin-top: 10%;">
+	 			<p id="text1"></p>
+	 		</div>
+	 	</center>
+		<script>
+			var text1=document.getElementById("text1");
+			var size=5;
+			var a=setInterval(increment,100);
+			function increment()
+			{
+				text1.innerHTML="TEXT GROWING";
+				size+=5
+				text1.setAttribute("style","color:#ff0000;font-size:"+size+"pt;");
+				if(size==50)
+				{
+					clearInterval(a);
+					var b=setInterval(decrement,100);
+				}
+			}
+			function decrement()
+			{
+				text1.innerHTML="TEXT SHRINKING";
+				size-=5
+				text1.setAttribute("style","color:rgb(100, 230, 247);font-size:"+size+"pt;");
+				if(size==5)
+				{
+					clearInterval(b);
+				}
+			}
+		</script>
+	</body>
+</html>
