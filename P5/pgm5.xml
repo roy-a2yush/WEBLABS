@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<?xml-stylesheet type="text/css" href="pgm5.css"?>
+<studentlist>
+	<student1>
+		<usn>1CR17CS003</usn>
+		<name>Aayush Lal Roy</name>
+		<college>CMRIT</college>
+		<yearofjoining>2017</yearofjoining>
+		<branch>CSE</branch>
+		<emailid>aayu17cs@cmrit.ac.in</emailid>
+	</student1>
+	<student2>
+		<usn>1CR17CS143</usn>
+		<name>Shruti Singh</name>
+		<college>CMRIT</college>
+		<yearofjoining>2017</yearofjoining>
+		<branch>CSE</branch>
+		<emailid>shrs17cs@cmrit.ac.in</emailid>
+	</student2>
+	<student3>
+		<usn>1CR17CS193</usn>
+		<name>NK Vishwa Vignesh</name>
+		<college>CMRIT</college>
+		<yearofjoining>2017</yearofjoining>
+		<branch>CSE</branch>
+		<emailid>vish17cs@cmrit.ac.in</emailid>
+	</student3>
+</studentlist>

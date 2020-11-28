@@ -1,0 +1,11 @@
+usn{color:black;display:block;}
+name{color:teal;display:block;}
+college{color:black;display:block;}
+yearofjoining{color:teal;display:block;}
+branch{color:black;display:block;}
+emailid{color:teal;display:block;}
+student1,student2,student3{
+border:2px dotted black;
+display:inline-block;
+margin: 10px;
+}

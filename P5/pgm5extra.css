@@ -1,0 +1,13 @@
+name{color:black;display:block;}
+airline{color:teal;display:block;}
+passport{color:black;display:block;}
+visa{color:teal;display:block;}
+adress{color:black;display:block;}
+{color:teal;display:block;}
+pass1,pass2,pass3,pass4,pass5{
+border:2px dotted black;
+display:inline-block;
+margin: 10px;
+width: 15%;
+background-color: lightgrey;
+}
