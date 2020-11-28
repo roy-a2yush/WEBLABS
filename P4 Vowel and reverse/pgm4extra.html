@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="roy.a2yush.png" type="image/gif" sizes="16x16">
+	<title>Pgm 4 extra</title>
+	<style type="text/css">
+		.center {
+			margin-top: 10%;
+			text-align: center;
+		}
+		body {
+			overflow: hidden;
+			background-color: black;
+		}
+		p {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<p><strong>Name: </strong>Aayush Lal Roy</p>
+		<p><strong>USN: </strong>1CR17CS003</p>
+		<br>
+		<br>
+		<script type="text/javascript">
+			var num=prompt("Enter a number","")
+			var f1=0;
+			var f2=1;
+			document.write("<p>No is "+num+"</p><br>")
+			document.write("<p>Palindromic sequence is:</p><br>")
+			document.write("<p>",f1," </p>");
+			document.write("<p>",f2," </p>");
+			 
+			var i,f3;
+			for(i=2; i<num; i++)
+			{
+				 f3=f1+f2;
+				 document.write("<p>",f3," </p>");
+				 f1=f2;
+				 f2=f3;
+			}
+			
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="roy.a2yush.png" type="image/gif" sizes="16x16">
+	<title>Pgm 4 b</title>
+	<style type="text/css">
+		.center {
+			margin-top: 10%;
+			text-align: center;
+		}
+		body {
+			overflow: hidden;
+			background-color: black;
+		}
+		p {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<p><strong>Name: </strong>Aayush Lal Roy</p>
+		<p><strong>USN: </strong>1CR17CS003</p>
+		<br>
+		<br>
+		<script type="text/javascript">
+			var num=prompt("Enter a number","")
+			var n=num
+			var rev=0,rem
+			while(n!=0){
+				rem=n%10;
+				rev=rev*10+rem
+				n=Math.floor(n/10)
+			}
+			document.write("<p>The given no is "+num+"</p><br>")
+			document.write("<p>The reversed no is "+rev+"</p>")
+		</script>
+	</div>
+</body>
+</html>

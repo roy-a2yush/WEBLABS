@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="roy.a2yush.png" type="image/gif" sizes="16x16">
+	<title>PROGRAM 4</title>
+	<style type="text/css">
+		.center {
+			margin-top: 10%;
+			text-align: center;
+		}
+		body {
+			overflow: hidden;
+			background-color: black;
+		}
+		p {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<p><strong>Name: </strong>Aayush Lal Roy</p>
+		<p><strong>USN: </strong>1CR17CS003</p>
+		<br>
+		<br>
+		<script type="text/javascript">
+			var str=prompt("Enter a string","");
+			var ch=""
+			document.write("The given string is : "+str+"<br>")
+			l=str.length;
+			str=str.toUpperCase();
+			//alert("The length of the string "+str+" is "+l);
+			for(i=0;i<l;i++){
+				ch=str.charAt(i)
+				if(ch=='A' || ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+					break;
+				}
+			}
+			if(i<l)
+					document.write("<p>The leftmost vowel is at position : "+(i+1)+"</p><br>")
+				else
+					document.write("<p>vowel not found</p>")
+		</script>
+	</div>
+</body>
+</html>
